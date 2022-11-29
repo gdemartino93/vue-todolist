@@ -5,7 +5,6 @@ createApp({
     return {
         errorEmpty: false,
         errorMinChar: false,
-        error : false,
         newTask: '',
         tasks: [
             {
@@ -28,12 +27,16 @@ createApp({
         addNew(){
             if ( this.newTask == ""){
                 this.errorEmpty = true
+                this.errorMinChar = false
             }
             else if ( this.newTask.length < 3){
                 this.errorMinChar = true
+                this.errorEmpty = false
                 
             }
             else{
+                this.errorEmpty = false
+                this.errorMinChar = false
                 this.tasks.push({text : this.newTask})
             }
             this.newTask=""

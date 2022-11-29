@@ -12,9 +12,11 @@
 <body>
     <div id="app">
         <h1>todo list</h1>
-        <input type="text" v-model="newTask" placeholder="inserisci la tua cosa da fare">
+        <input type="text" v-model="newTask" placeholder="inserisci la tua cosa da fare" @KeyUp.enter="addNew">
+
         <span class="errore" v-if="errorEmpty">Il testo non può essere vuoto</span>
         <span class="errore" v-else-if="errorMinChar">Il testo non può contenere meno di 3 caratteri</span>
+        <span v-else>  <!-- prova --> </span>
 
         <ul>
             <li v-for="task in tasks">
