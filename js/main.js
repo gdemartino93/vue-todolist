@@ -17,7 +17,7 @@ createApp({
                 done: true
             },
             {
-                text: 'thrd', 
+                text: 'thrdd', 
                 done: false
             }
         ]
