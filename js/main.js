@@ -40,9 +40,13 @@ createApp({
             }
             this.newTask=""
         },
-        deleteTask(){
-
+        deleteTask(i){
+            if (confirm('Sei sicuro di voler cancellare?')) {
+                this.tasks.splice(i,1)
+              } 
         }
+    },
+    mounted(){
+       
     }
-
 }).mount("#app")
