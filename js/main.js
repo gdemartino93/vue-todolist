@@ -48,9 +48,10 @@ createApp({
         },
         doneFunc(indice){
            this.tasks[indice].done = true;
-           console.log(indice);
-
-        }
+        },
+        unDoneFunc(indice){
+            this.tasks[indice].done = false;
+         }
     },
     mounted(){
        

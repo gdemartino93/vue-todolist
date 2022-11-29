@@ -42,7 +42,7 @@
                             {{task.text}}
                             <div class="btnSection">
                                 <img src="img/awaiting.svg" alt="" @click="doneFunc(i)" v-if="task.done == false">
-                                <img src="img/done.svg" alt="" v-if="task.done">
+                                <img src="img/done.svg" alt="" v-if="task.done" @click="unDoneFunc(i)">
                                 <button type="button" class="btn-close mx-2" aria-label="Close" @click="deleteTask(i)"></button>
 
                             </div>
