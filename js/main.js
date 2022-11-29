@@ -9,15 +9,15 @@ createApp({
         newTask: '',
         tasks: [
             {
-                text: 'first', 
+                text: 'Creare pagina registrazione ', 
                 done: false
             },
             {
-                text: 'second', 
+                text: 'Creare pagina accedi', 
                 done: true
             },
             {
-                text: 'thrdd', 
+                text: 'Fixare bug', 
                 done: false
             }
         ]
@@ -37,7 +37,7 @@ createApp({
             else{
                 this.errorEmpty = false
                 this.errorMinChar = false
-                this.tasks.push({text : this.newTask})
+                this.tasks.push({text : this.newTask , done : false})
             }
             this.newTask=""
         },
