@@ -40,7 +40,13 @@
                     <ul>
                         <li v-for="(task,i) in tasks">
                             {{task.text}}
-                            <i class="fa-sharp fa-solid fa-xmark mx-2" @click="deleteTask(i)"></i>
+                            <div class="btnSection">
+                                <img src="img/awaiting.svg" alt="" @click="done()">
+                                <img src="img/done.svg" alt="" v-show="tasks.done == true">
+                                <button type="button" class="btn-close mx-2" aria-label="Close" @click="deleteTask"></button>
+
+                            </div>
+                            
                         </li>
                         <span ></span>
                     </ul>

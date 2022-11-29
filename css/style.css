@@ -18,6 +18,7 @@ li{
     justify-content:space-between;
     align-items: center;
     word-break: break-all;
+    font-size: 1.2rem;
 }
 ul{
     display: flex;
@@ -26,4 +27,9 @@ ul{
 }
 i{
     cursor: pointer;
+}
+.btnSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

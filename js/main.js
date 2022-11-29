@@ -3,6 +3,7 @@ const { createApp } = Vue
 createApp({
   data() {
     return {
+        done : false,
         errorEmpty: false,
         errorMinChar: false,
         newTask: '',
@@ -44,6 +45,11 @@ createApp({
             if (confirm('Sei sicuro di voler cancellare?')) {
                 this.tasks.splice(i,1)
               } 
+        },
+        done(){
+           this.done = true;
+           console.log("asdasd");
+
         }
     },
     mounted(){
