@@ -9,15 +9,15 @@ createApp({
         newTask: '',
         tasks: [
             {
-                text: 'Fare i compiti', 
+                text: 'first', 
                 done: false
             },
             {
-                text: 'Fare la spesa', 
+                text: 'second', 
                 done: true
             },
             {
-                text: 'Fare il bucato', 
+                text: 'thrd', 
                 done: false
             }
         ]
@@ -46,9 +46,9 @@ createApp({
                 this.tasks.splice(indice,1)
               } 
         },
-        doneFunc(){
-           this.done = true;
-           console.log(i);
+        doneFunc(indice){
+           this.task[indice].done = true;
+           console.log(indice);
 
         }
     },
@@ -56,3 +56,6 @@ createApp({
        
     }
 }).mount("#app")
+
+
+
