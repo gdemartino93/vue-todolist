@@ -27,7 +27,7 @@
             <div class="row">
                 <div class="col-12">
 
-                    <input class="form-control form-control-lg  " type="text" placeholder="Inserisci una cosa da fare" aria-label=".form-control-lg example" v-model= "newTask" @KeyUp.enter="addNew" :class="errorEmpty == true ? 'animate__animated animate__shakeX'  : '' " >
+                    <input class="form-control form-control-lg  " type="text" placeholder="Inserisci una cosa da fare" aria-label=".form-control-lg example" v-model= "newTask" @KeyUp.enter="addNew" :class="errorEmpty === true ? 'animate__animated animate__shakeX'  : '' " >
 
                     <div class="alert alert-warning mt-2" role="alert" v-if="errorEmpty">
                         Il testo non può essere vuoto
@@ -38,10 +38,11 @@
                     
                       
                 </div>
+               
             </div>
             <div class="row my-5">
                 <div class="col-12">
-                    <ul>
+                    <ul v-if="tasks.length > 0">
                         <li v-for="(task,i) in tasks">
                             {{task.text}}
                             <div class="btnSection mx-5">
@@ -52,8 +53,10 @@
                             </div>
                             
                         </li>
-                        <span ></span>
+                        
                     </ul>
+                    <span style='font-size:100px;' v-else>&#128526; Time for Holidays &#128526;</span>
+
                 </div>
             </div>
             <div class="row">
