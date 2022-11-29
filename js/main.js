@@ -46,9 +46,9 @@ createApp({
                 this.tasks.splice(indice,1)
               } 
         },
-        doneFunc(){
-           this.done = true;
-           console.log(i);
+        doneFunc(indice){
+           this.done[indice] = true;
+           console.log(indice);
 
         }
     },
