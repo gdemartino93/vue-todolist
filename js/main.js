@@ -47,7 +47,7 @@ createApp({
               } 
         },
         doneFunc(indice){
-           this.task[indice].done = true;
+           this.tasks[indice].done = true;
            console.log(indice);
 
         }
