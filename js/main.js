@@ -41,14 +41,14 @@ createApp({
             }
             this.newTask=""
         },
-        deleteTask(i){
+        deleteTask(indice){
             if (confirm('Sei sicuro di voler cancellare?')) {
-                this.tasks.splice(i,1)
+                this.tasks.splice(indice,1)
               } 
         },
-        done(){
+        doneFunc(){
            this.done = true;
-           console.log("asdasd");
+           console.log(i);
 
         }
     },
