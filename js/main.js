@@ -1,4 +1,7 @@
 // provare ad aggiungere animazione input shape quando è in errore
+
+
+
 const { createApp } = Vue
 
 createApp({
@@ -30,7 +33,7 @@ createApp({
                 this.errorEmpty = true
                 this.errorMinChar = false
             }
-            else if ( this.newTask.length < 5){
+            else if ( this.newTask.length < 3){
                 this.errorMinChar = true
                 this.errorEmpty = false
                 

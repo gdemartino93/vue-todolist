@@ -49,6 +49,7 @@
                                 <img src="img/awaiting.svg" alt="" @click="doneFunc(i)" v-if="task.done == false">
                                 <img src="img/done.svg" alt="" v-if="task.done" @click="unDoneFunc(i)">
                                 <button type="button" class="btn-close mx-3" aria-label="Close" @click="deleteTask(i)"></button>
+                                <i class="fa-solid fa-pen-to-square"></i>
 
                             </div>
                             
