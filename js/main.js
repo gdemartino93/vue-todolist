@@ -20,7 +20,6 @@ createApp({
                 done: false
             }
         ]
-            
     }
 },
     methods:{
@@ -40,6 +39,9 @@ createApp({
                 this.tasks.push({text : this.newTask})
             }
             this.newTask=""
+        },
+        deleteTask(){
+
         }
     }
 

@@ -13,3 +13,17 @@
 .errore{
     color: red;
 }
+li{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    word-break: break-all;
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+i{
+    cursor: pointer;
+}
